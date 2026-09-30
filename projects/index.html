@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1220">
+  <meta name="description" content="Automation demos and engineering case studies by Gabriel Barbu: workflows, warehouse controls, vision inspection, robotics and embedded systems.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Barbu Robotics">
+  <meta property="og:title" content="Projects | Barbu Robotics">
+  <meta property="og:description" content="Automation demos and engineering case studies by Gabriel Barbu: workflows, warehouse controls, vision inspection, robotics and embedded systems.">
+  <meta property="og:url" content="https://gabrielbarbu2004.github.io/projects/">
+  <link rel="canonical" href="https://gabrielbarbu2004.github.io/projects/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/services.css">
+  
+  
+  <title>Projects | Barbu Robotics</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="/" aria-label="Barbu Robotics, home"><span class="brand-mark">GB</span><span>BARBU<span class="brand-light"> / ROBOTICS</span></span></a>
+      <nav aria-label="Main navigation"><a href="/">Home</a><a href="/#services">Services</a><a href="/projects/" aria-current="page">Projects</a><a href="/tools/">Tools</a></nav>
+      <a class="nav-contact" href="/#contact">Get in touch </a>
+    </div>
+  </header>
+  <main id="main">
+<section class="page-hero container"><p class="eyebrow"><span class="eyebrow-line"></span> ENGINEERING PROJECTS</p><h1>Work, in detail<span class="accent">.</span></h1><p>Explore three working automation prototypes and three academic engineering projects. Try the demos, download their source, and read what each project demonstrates.</p></section>
+<section id="prototypes" class="prototype-intro container"><h2>Independent automation prototypes</h2><div class="prototype-grid">
+    <article class="prototype-card"><p class="prototype-type">WORKFLOW AUTOMATION · DEMO</p><div class="mini-flow" aria-label="Intake, validate, review, execute"><span>Intake</span><span>Validate</span><span>Review</span><span>Execute</span></div><h3>Workflow Automation Bench</h3><p>Route fictional service requests, catch duplicates and keep human approval in the loop.</p><div class="prototype-footer"><a class="button primary" href="/demos/workflow-automation-bench/">Try workflow demo</a><a href="https://github.com/Gabrielbarbu2004/barbu-robotics-automation-labs/tree/main/workflow-automation-bench" target="_blank" rel="noopener noreferrer">View on GitHub</a><a href="/downloads/workflow-automation-bench.zip" download>Download source</a></div></article>
+    <article class="prototype-card"><p class="prototype-type">WAREHOUSE CONTROLS · SIMULATION</p><div class="mini-flow" aria-label="Conveyor, robot, dispatch"><span>Conveyor</span><span>Robot</span><span>Dispatch</span></div><h3>Warehouse Control Lab</h3><p>Run a warehouse sequence, introduce a fault and work through a deliberate recovery.</p><div class="prototype-footer"><a class="button primary" href="/demos/warehouse-control-lab/">Try control demo</a><a href="https://github.com/Gabrielbarbu2004/barbu-robotics-automation-labs/tree/main/warehouse-control-lab" target="_blank" rel="noopener noreferrer">View on GitHub</a><a href="/downloads/warehouse-control-lab.zip" download>Download source</a></div></article>
+    <article class="prototype-card"><p class="prototype-type">MACHINE VISION · SYNTHETIC DATA</p><div class="mini-flow" aria-label="Image, measure, evaluate"><span>Image</span><span>Measure</span><span>Evaluate</span></div><h3>Vision Inspection Workbench</h3><p>Inspect generated component images and see how thresholds affect false accepts and rejects.</p><div class="prototype-footer"><a class="button primary" href="/demos/vision-inspection-workbench/">Try vision demo</a><a href="https://github.com/Gabrielbarbu2004/barbu-robotics-automation-labs/tree/main/vision-inspection-workbench" target="_blank" rel="noopener noreferrer">View on GitHub</a><a href="/downloads/vision-inspection-workbench.zip" download>Download source</a></div></article>
+  </div>
+  <p class="prototype-note">Independent prototypes using simulated or fictional inputs. Their results describe the demo conditions, not client deployments.</p>
+</section><section class="case-section case-light" id="mario"><div class="container case-grid"><div class="case-index"><span>01 / MSc THESIS</span><span>VISION + ROBOTICS</span></div><div class="case-main"><h2>Vision-guided robotic docking</h2><p class="case-lead">A perception pipeline to bring the MARIO robot toward a docking target using camera observations.</p><div class="case-columns"><div><h3>The work</h3><p>Used YOLO target detection and ZED RGB-D data to estimate a target pose. Plane fitting and marker orientation helped form a geometric estimate that could be transformed from camera coordinates into the robot’s frame.</p></div><div><h3>The test</h3><p>Connected pose estimates to a staged approach: move, observe again and refine. Tested the pipeline on the physical MARIO robot under changes in range, orientation and lighting.</p></div></div><div class="case-footer"><div class="tags"><span>Python</span><span>ROS 2</span><span>RGB-D</span><span>Pose estimation</span></div><div class="case-links"><a class="card-link" href="/tools/depth-backprojection/">Explore depth geometry</a><a class="card-link" href="https://youtube.com/playlist?list=PLVSSYyysevHE" target="_blank" rel="noopener noreferrer">Watch project videos</a></div></div></div></div></section>
+<section class="case-section" id="servicing"><div class="container case-grid"><div class="case-index"><span>02 / GROUP DESIGN</span><span>ROBOT DESIGN</span></div><div class="case-main"><h2>On-orbit servicing arm</h2><p class="case-lead">A satellite-servicing concept with a three-arm configuration and a six-degree-of-freedom manipulator.</p><div class="case-columns"><div><h3>The role</h3><p>Served as project manager for a six-person design group, coordinating the concept and engineering work across the team.</p></div><div><h3>The analysis</h3><p>Led manipulator design and MATLAB analysis of kinematics, reach and thermal effects. The work was a design study, rather than an operational flight system.</p></div></div><div class="case-footer"><div class="tags"><span>Project management</span><span>MATLAB</span><span>Kinematics</span><span>Manipulator design</span></div><a class="card-link" href="/tools/arm-reach/">Try the arm planner</a></div></div></div></section>
+<section class="case-section case-light" id="spectrum"><div class="container case-grid"><div class="case-index"><span>03 / BEng PROJECT</span><span>EMBEDDED SYSTEMS</span></div><div class="case-main"><h2>Embedded spectrum analyser</h2><p class="case-lead">An instrumentation project that grew out of a real testing gap in the electronics lab.</p><div class="case-columns"><div><h3>The problem</h3><p>In second year, I could not fully test a circuit with the equipment available. That experience shaped the goal of my third-year project: make frequency-domain measurements more accessible for my circuit and other students’ circuits.</p></div><div><h3>The build</h3><p>Built an STM32/Arduino-based spectrum analyser around signal acquisition and display. The companion sampling checker shows one of the design decisions behind measuring signals digitally.</p></div></div><div class="case-footer"><div class="tags"><span>STM32</span><span>Arduino</span><span>Signal acquisition</span><span>Instrumentation</span></div><a class="card-link" href="/tools/sampling-checker/">Try the sampling checker </a></div></div></div></section>
+<section class="next-section"><div class="container next-row"><div><p class="section-kicker">NEXT</p><h2>See the working tools.</h2></div><a class="button primary" href="/tools/">Explore tools </a></div></section>
+</main>
+  <footer class="site-footer"><div class="container footer-row"><span>Barbu Robotics · Automation &amp; engineering</span><span><a href="https://www.linkedin.com/in/gabriel-barbu-23b133324/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://youtube.com/playlist?list=PLVSSYyysevHE" target="_blank" rel="noopener noreferrer">YouTube</a> · <a href="https://github.com/Gabrielbarbu2004/barbu-robotics-automation-labs" target="_blank" rel="noopener noreferrer">GitHub</a> · Northampton, UK</span></div></footer>
+</body>
+</html>

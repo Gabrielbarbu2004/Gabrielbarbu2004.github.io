@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1220">
+  <meta name="description" content="Calculate Nyquist frequency, FFT resolution and capture duration with Gabriel Barbu's live sampling checker.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Barbu Robotics">
+  <meta property="og:title" content="Sampling & FFT Checker | Barbu Robotics">
+  <meta property="og:description" content="Calculate Nyquist frequency, FFT resolution and capture duration with Gabriel Barbu's live sampling checker.">
+  <meta property="og:url" content="https://gabrielbarbu2004.github.io/tools/sampling-checker/">
+  <link rel="canonical" href="https://gabrielbarbu2004.github.io/tools/sampling-checker/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/services.css">
+  <script src="/sampling.js" defer></script>
+  
+  <title>Sampling & FFT Checker | Barbu Robotics</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="/" aria-label="Barbu Robotics, home"><span class="brand-mark">GB</span><span>BARBU<span class="brand-light"> / ROBOTICS</span></span></a>
+      <nav aria-label="Main navigation"><a href="/">Home</a><a href="/#services">Services</a><a href="/projects/">Projects</a><a href="/tools/" aria-current="page">Tools</a></nav>
+      <a class="nav-contact" href="/#contact">Get in touch </a>
+    </div>
+  </header>
+  <main id="main">
+<section class="page-hero container tool-page-hero"><a class="back-link" href="/tools/">All tools</a><p class="eyebrow"><span class="eyebrow-line"></span> 02 / SIGNAL PROCESSING</p><h1>Sampling &amp; FFT checker<span class="accent">.</span></h1><p>Explore how a chosen sample rate and FFT length affect a signal measurement. Change the inputs to see the Nyquist margin and frequency resolution.</p></section>
+<section class="demo-section tool-page"><div class="container demo-grid"><div class="demo-copy"><p class="section-kicker">THE IDEA</p><h2>Choose the measurement first.</h2><p>For a highest signal frequency <em>f</em>, the sample rate must be greater than 2<em>f</em> to leave Nyquist margin. An N-point FFT has frequency-bin spacing <em>f</em><sub>s</sub> / N and a capture duration N / <em>f</em><sub>s</sub>.</p><ul class="demo-list"><li>Nyquist frequency: sample rate ÷ 2</li><li>FFT bin spacing: sample rate ÷ sample count</li><li>Capture duration: sample count ÷ sample rate</li></ul><p class="small-note">These are idealised calculations. Real measurements also depend on filtering, windowing, noise and the analogue front end.</p></div><form id="sampling-form" class="tool sampling-tool"><div class="tool-header"><span class="tool-icon" aria-hidden="true">ƒ<sub>s</sub></span><span>sampling-checker</span><span class="tool-local">LIVE CALCULATION</span></div><div class="field-stack"><label for="sample-rate">Sample rate <span>Hz</span></label><input id="sample-rate" name="sample-rate" type="number" inputmode="decimal" min="0.001" step="any" value="1000" required><label for="signal-frequency">Highest signal frequency <span>Hz</span></label><input id="signal-frequency" name="signal-frequency" type="number" inputmode="decimal" min="0.001" step="any" value="200" required><label for="fft-size">FFT sample count <span>samples</span></label><input id="fft-size" name="fft-size" type="number" inputmode="numeric" min="2" max="10000000" step="1" value="1024" required></div><div class="tool-actions"><button class="button primary" type="submit">Calculate</button></div><p id="sampling-error" class="tool-error" role="alert" hidden></p><div id="sampling-results" class="results sampling-results" aria-live="polite"></div></form></div></section>
+<section class="next-section"><div class="container next-row"><div><p class="section-kicker">PROJECT CONNECTION</p><h2>Why I built an instrument.</h2></div><a class="button primary" href="/projects/#spectrum">Spectrum analyser project </a></div></section>
+</main>
+  <footer class="site-footer"><div class="container footer-row"><span>Barbu Robotics · Automation &amp; engineering</span><span><a href="https://www.linkedin.com/in/gabriel-barbu-23b133324/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://youtube.com/playlist?list=PLVSSYyysevHE" target="_blank" rel="noopener noreferrer">YouTube</a> · <a href="https://github.com/Gabrielbarbu2004/barbu-robotics-automation-labs" target="_blank" rel="noopener noreferrer">GitHub</a> · Northampton, UK</span></div></footer>
+</body>
+</html>

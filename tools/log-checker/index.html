@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1220">
+  <meta name="description" content="A working sensor log checker for CSV range and confidence data. Flags missing readings, low confidence and outliers in your browser.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Barbu Robotics">
+  <meta property="og:title" content="Sensor Log Checker | Barbu Robotics">
+  <meta property="og:description" content="A working sensor log checker for CSV range and confidence data. Flags missing readings, low confidence and outliers in your browser.">
+  <meta property="og:url" content="https://gabrielbarbu2004.github.io/tools/log-checker/">
+  <link rel="canonical" href="https://gabrielbarbu2004.github.io/tools/log-checker/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/services.css">
+  <script src="/app.js" defer></script>
+  
+  <title>Sensor Log Checker | Barbu Robotics</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="/" aria-label="Barbu Robotics, home"><span class="brand-mark">GB</span><span>BARBU<span class="brand-light"> / ROBOTICS</span></span></a>
+      <nav aria-label="Main navigation"><a href="/">Home</a><a href="/#services">Services</a><a href="/projects/">Projects</a><a href="/tools/" aria-current="page">Tools</a></nav>
+      <a class="nav-contact" href="/#contact">Get in touch </a>
+    </div>
+  </header>
+  <main id="main">
+<section class="page-hero container tool-page-hero"><a class="back-link" href="/tools/">All tools</a><p class="eyebrow"><span class="eyebrow-line"></span> 01 / SENSOR DATA</p><h1>Sensor log checker<span class="accent">.</span></h1><p>Spot missing readings, low confidence and unusual ranges in a simple robot sensor log. Paste a CSV or load a file. Processing happens in your browser.</p></section>
+<section class="demo-section tool-page"><div class="container demo-grid"><div class="demo-copy"><p class="section-kicker">HOW IT WORKS</p><h2>Readings, made visible.</h2><p>Expected columns: <code>timestamp_ms, range_mm, confidence</code>. The preloaded sample is illustrative and does not contain MARIO data.</p><ul class="demo-list"><li>Missing or invalid range, confidence or timestamp</li><li>Confidence below 0.5</li><li>Range outliers using median absolute deviation, with a 5 mm minimum threshold</li></ul><p class="small-note">This is a demonstration for simple CSV logs. Review flagged readings against sensor context before making engineering decisions.</p></div><div class="tool" aria-label="Sensor log checker"><div class="tool-header"><span class="tool-icon" aria-hidden="true">&gt;_</span><span>log-checker.csv</span><span class="tool-local">LOCAL PROCESSING</span></div><label for="csv-input">CSV data</label><textarea id="csv-input" spellcheck="false" rows="8">timestamp_ms,range_mm,confidence
+0,401,0.96
+100,399,0.94
+200,402,0.91
+300,400,0.93
+400,,0.88
+500,401,0.95
+600,439,0.92
+700,398,0.41
+800,400,0.97
+900,403,0.94</textarea><div class="tool-actions"><button id="analyse-button" class="button primary" type="button">Analyse log</button><label class="upload-button" for="csv-file">Load CSV<input id="csv-file" type="file" accept=".csv,text/csv"></label><button id="download-button" class="download-button" type="button" disabled>Download flagged CSV</button></div><p id="tool-error" class="tool-error" role="alert" hidden></p><div id="results" class="results" aria-live="polite"></div></div></div></section>
+<section class="next-section"><div class="container next-row"><div><p class="section-kicker">ANOTHER TOOL</p><h2>Explore sampling decisions.</h2></div><a class="button primary" href="/tools/sampling-checker/">Sampling &amp; FFT checker </a></div></section>
+</main>
+  <footer class="site-footer"><div class="container footer-row"><span>Barbu Robotics · Automation &amp; engineering</span><span><a href="https://www.linkedin.com/in/gabriel-barbu-23b133324/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://youtube.com/playlist?list=PLVSSYyysevHE" target="_blank" rel="noopener noreferrer">YouTube</a> · <a href="https://github.com/Gabrielbarbu2004/barbu-robotics-automation-labs" target="_blank" rel="noopener noreferrer">GitHub</a> · Northampton, UK</span></div></footer>
+</body>
+</html>
